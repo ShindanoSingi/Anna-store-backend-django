@@ -113,7 +113,7 @@ function ProductScreen({history}) {
                                                 </ListGroup>
                                           )}
 
-                                          <ListGroup.Item className="p-3">
+                                          <ListGroup.Item className="p-2">
                                                 <Button
                                                       onClick={addToCartHandler}
                                                       className="btn-block w-100"
