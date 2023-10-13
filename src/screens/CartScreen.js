@@ -57,7 +57,7 @@ function CartScreen() {
                                           <ListGroup.Item key={item.product}>
                                                 <Row>
                                                       <Col md={2}>
-                                                            <Image
+                                                            <Image className="image"
                                                                   alt={
                                                                         item.name
                                                                   }
