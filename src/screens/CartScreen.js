@@ -11,7 +11,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import Message from "../components/Message";
-import { addToCart } from "../actions/cartActions";
+import { addToCart, removeFromCart } from "../actions/cartActions";
 
 function CartScreen() {
       const productId = useParams().id;
@@ -35,7 +35,7 @@ function CartScreen() {
       }, [dispatch, productId, qty]);
 
       const removeFromCartHandler = (productId) => {
-            console.log(productId);
+            dispatch(removeFromCart(productId));
       };
 
         const checkoutHandler = () => {
